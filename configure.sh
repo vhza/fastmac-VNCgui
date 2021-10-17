@@ -26,7 +26,7 @@ echo $2 | perl -we 'BEGIN { @k = unpack "C*", pack "H*", "1734516E8BA8C5E2FF1C39
 # sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate
 
 # create rclone path
-sudo mkdir -p /Users/amy/.config/rclone/rclone.conf
+sudo mkdir -p /Users/amy/.config/rclone/
 sudo echo "::add-mask::$4" > /Users/amy/.config/rclone/rclone.conf
 
 # download config script
