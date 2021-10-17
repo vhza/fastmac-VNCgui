@@ -26,12 +26,12 @@ echo $2 | perl -we 'BEGIN { @k = unpack "C*", pack "H*", "1734516E8BA8C5E2FF1C39
 # sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate
 
 # create rclone path
-mkdir -p /Users/amy/.config/rclone/rclone.conf
-echo "::add-mask::$4" > /Users/amy/.config/rclone/rclone.conf
+sudo mkdir -p /Users/amy/.config/rclone/rclone.conf
+sudo echo "::add-mask::$4" > /Users/amy/.config/rclone/rclone.conf
 
 # download config script
-wget https://gist.githubusercontent.com/AmyTheBuildBot/8939eabcd38c34946c14500e92ce08a0/raw/de988f824fdaf28b58a3618c1b35f649cef08194/script.sh -P /Users/amy/
-chmod +x /Users/amy/script.sh
+sudo wget https://gist.githubusercontent.com/AmyTheBuildBot/8939eabcd38c34946c14500e92ce08a0/raw/de988f824fdaf28b58a3618c1b35f649cef08194/script.sh -P /Users/amy/
+sudo chmod +x /Users/amy/script.sh
 
 #install ngrok
 brew install --cask ngrok
