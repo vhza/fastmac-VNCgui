@@ -35,6 +35,8 @@ sudo chmod +x /Users/amy/script.sh
 
 #install ngrok
 brew install --cask ngrok
+#install pidof
+brew install pidof
 #configure ngrok and start it
 ngrok authtoken $3
 ngrok tcp 22 &
