@@ -2,5 +2,5 @@
 while true  
 do  
 echo "loop"
-sleep 300  
+sleep 3000
 done
